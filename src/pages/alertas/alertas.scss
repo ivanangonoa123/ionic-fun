@@ -1,0 +1,48 @@
+page-alertas {
+  /// Mixin printing a linear-gradient
+  /// as well as a plain color fallback
+  /// and the `-webkit-` prefixed declaration
+  /// @access public
+  /// @param {Keyword | Angle} $direction - Linear gradient direction
+  /// @param {Arglist} $color-stops - List of color-stops composing the gradient
+  @mixin linear-gradient($direction, $color-stops...) {
+    background: nth(nth($color-stops, 1), 1);
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+    background: linear-gradient($direction, $color-stops);
+  }
+  .card {
+      width:100%;
+  }
+ 
+  ion-card {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+    .card-over {
+      padding: 10px;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      height: 30%;
+      bottom: 0;
+      @include gradient(color($colors, reddy_gradient, base), color($colors, reddy_gradient, contrast));
+      h1 {
+        color: color($colors, primary);
+      }
+      .card-category {
+        color: color($colors, primary);
+      }
+    }
+  }
+}

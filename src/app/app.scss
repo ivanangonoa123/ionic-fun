@@ -1,0 +1,85 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+ion-content {
+  display: flex;
+  align-content: center;
+}
+
+ion-row {
+  margin: auto;
+  max-width: $max-width-content;
+}
+
+.no-scroll .scroll-content {
+  overflow: hidden;
+}
+
+.side-menu-red {
+  background-color: color($colors, reddy)
+}
+
+.footer-md::before,
+.footer-ios::before,
+.footer-wp::before {
+  border: none;
+  background-image: none;
+}
+
+.header-md::after,
+.header-ios::after,
+.header-wp::after {
+  background-image: none;
+}
+
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+  border: none;
+}
+
+.item-list-trns>.item {
+  background-color: transparent;
+  border: none;
+}
+
+
+/*** SIDE MENU ***/
+
+.sidemenu-desc {
+  color: color($colors, primary);
+}
+
+ion-icon {
+  color: color($colors, primary);
+}
+
+b {
+  font-family: $roboto;
+  color: color($colors, primary);
+}
+
+
+/*** ALERT ***/
+
+.alert-md,
+.alert-ios,
+.alert-wp {
+  .alert-button {
+    .button-inner {
+      justify-content: center;
+    }
+    width:45%;
+    background-color: color($colors, reddy, base);
+    color: color($colors, reddy, contrast);
+  }
+}

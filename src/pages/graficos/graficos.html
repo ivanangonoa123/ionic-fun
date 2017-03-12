@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle class="button-clear">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-row>
+<ion-item>
+  <ion-label>Filtrar</ion-label>
+  <ion-select [(ngModel)]="filter-options" multiple="true" cssClass="alert">
+    <ion-option  >Encuesta</ion-option>
+    <ion-option>Grafico</ion-option>
+    <ion-option>Politica</ion-option> 
+  </ion-select> 
+</ion-item> 
+
+  <!--
+    <button ion-button item-right>Filtrar</button>
+    <div class="filter-items">
+    <ul>
+      <li> 
+        <button  ion-button round small class="item-stat" (click)="itemSelected()"> 
+      <ion-icon name="close" item-left></ion-icon>
+      Encuesta
+      </button>
+      </li>
+      <li>
+       <button ion-button round small class="item-stat" (click)="itemSelected()"> 
+      <ion-icon  name="close" item-left></ion-icon>
+      Encuesta
+      </button>
+      </li>
+    </ul>
+  </div>-->
+ 
+
+  <ion-list>
+    <button class="item-stat" ion-item (click)="itemSelected()"> 
+      <ion-icon  name="stats" item-left></ion-icon> 
+    <h1> Gráfico 1 In Lorem pariatur cillum cillum quis ad amet ut excepteur.</h1>
+    <div class="category">CATEGORY</div>
+  </button>
+
+    <button class="item-stat" ion-item (click)="itemSelected()"> 
+      <ion-icon name="stats" item-left></ion-icon>  
+    <h1>Encuesta</h1>
+    <div class="category">CATEGORY</div>
+  </button>
+
+    <button ion-item (click)="itemSelected()" class="item-stat"> 
+      <ion-icon name="stats" item-left></ion-icon> 
+    <h1> Gráfico 2</h1>
+    <div class="category">CATEGORY</div>
+  </button>
+  </ion-list>
+
+</ion-row>
+
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-menu [content]="content" persistent="true">
+  <ion-header>
+    <ion-toolbar>
+      <button clear ion-button menuClose icon-only>
+        <ion-icon name="close" color="primary"></ion-icon>
+    </button> 
+    </ion-toolbar>
+  </ion-header>
+  <ion-content padding class="no-scroll side-menu-red">
+    
+    <div class="sidemenu-desc">
+      Aquí se explicara en qué consiste la app en pocas palabras. lorem Fugiat nisi dolor aute ut voluptate mollit exercitation
+      ad aliqua laboris aute consectetur.
+    </div>
+
+    <ion-footer>
+      <ion-list class="align-bottom item-list-trns">
+
+        <button menuClose ion-item icon-only clear (click)="editProfileHandler()">
+        <ion-icon name="person" item-left></ion-icon>
+         <b>Editar Perfil</b>
+        </button>
+
+        <button ion-item icon-only clear>
+        <ion-icon name="mail" item-left></ion-icon>
+        <b>Contacto</b>
+         </button>
+
+        <button menuClose ion-item icon-only clear (click)="logout()">
+        <ion-icon name="exit" item-left></ion-icon>
+        <b>Cerrar Sesión</b>
+        </button>
+
+      </ion-list>
+    </ion-footer>
+
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false">
+</ion-nav>

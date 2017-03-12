@@ -1,0 +1,67 @@
+page-graficos {
+  
+  ion-list {
+    width: 100%;
+  }
+
+  .item-stat {
+    margin-top: 10px;
+    display: flex;
+    .item-inner {
+      padding-bottom: 15px;
+      h1 {
+        font-size: $font-size-medium;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+      }
+    }
+    ion-icon {
+      color: color($colors, reddy);
+       ::before {
+        font-size: 35px;
+      }
+    }
+  }
+  .filter-items {
+    ul {
+      margin: auto;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      list-style-type: none;
+      font-family: $roboto;
+      .item-inner {
+        font-size: $font-size-small;
+        border-bottom: none;
+      }
+      button {
+        background-color: color($colors, reddy, base);
+        color: color($colors, reddy, contrast);
+        padding-left: 30px;
+        font-size: 12px;
+        ion-icon {
+          color: color($colors, reddy, contrast);
+        }
+         ::before {
+          font-size: 25px;
+          position: absolute;
+          left: 10px;
+          top: 0px;
+        }
+      }
+    }
+  }
+  .category {
+    font-family: $roboto;
+    font-size: $font-size-small;
+    background-color: color($colors, reddy, base);
+    color: color($colors, reddy, contrast);
+    padding: 5px;
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

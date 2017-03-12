@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Editar Perfil</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-avatar class="text-center" ><ion-icon color="reddy" name="person"></ion-icon></ion-avatar>
+
+  <hr>
+
+  <ion-item>
+    <ion-input type="name" placeholder="Nombre" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+</ion-content>

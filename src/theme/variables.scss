@@ -1,0 +1,110 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #fff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #fb9382,
+  dark:       #222,
+  reddy:(
+    base: #e92001,
+    contrast: #ffffff
+    ),
+    reddy_gradient:(
+    base: rgba(233, 32, 1, 1),
+    contrast: rgba(237, 176, 166, 0.5)
+    )
+);
+
+@mixin gradient($top, $bottom) { 
+    background: -webkit-linear-gradient(top, $top, $bottom ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, $top, $bottom ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, $top, $bottom ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, $top, $bottom ); /* Standard syntax (must be last)*/
+}
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+ 
+$tabs-background: color($colors, reddy); 
+$toolbar-background: color($colors, reddy); 
+$toolbar-border-color: color($colors, primary); 
+$tabs-ios-border: none;
+
+$tabs-tab-color-inactive: color($colors, light);  
+
+$font-family-ios-base: "Georgia", -apple-system, "Helvetica Neue", "Roboto", sans-serif;
+$font-family-md-base: "Georgia", "Roboto", "Helvetica Neue", sans-serif;
+$font-family-wp-base: "Georgia", "Segoe UI", "Noto Sans", sans-serif;
+
+$font-size-base: 16px !default;
+$tabs-text-font-size: 20px !default; 
+
+$max-width-content: 768px;
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+$roboto: "roboto", "Arial";
+$font-size-small: 12px;
+$font-size-medium: 18px;
+
