@@ -1,4 +1,10 @@
 page-item-grafico {
+
+    ion-tabs .tabs-md.tabbar{
+        display: none;
+        opacity: 0;
+    }
+
     .row {
         margin:auto;
         max-width: $max-width-content;

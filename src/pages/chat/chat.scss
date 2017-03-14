@@ -40,8 +40,20 @@ $border: 2px;
       align-self: flex-end; 
   }
 
-  ion-input {
-    width: 100%;
+  ion-input {  
     border: 2px solid color($colors, reddy);
+    padding-left: 0;
+  }
+  
+  ion-footer {
+    .item-md, .item-ios, .item-wp { 
+      width: 100%;      
+      padding: 0;
+
+      .item-inner {
+        padding: 0 !important;
+      }
+    }
+    
   }
 }

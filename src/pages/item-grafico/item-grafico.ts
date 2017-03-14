@@ -6,7 +6,7 @@ import { NavController, NavParams, ActionSheetController } from 'ionic-angular';
   templateUrl: 'item-grafico.html'
 })
 export class ItemGraficoPage {
-
+  
   constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController) { }
 
   presentActionSheet() {
@@ -37,6 +37,8 @@ export class ItemGraficoPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ItemGraficoPage');
+    
   }
+ 
 
 }
